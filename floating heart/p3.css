@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+#hii{
+    color: #f0f8f0;
+    background-color: rgb(8, 8, 0);
+    position: relative;
+    font-size: 30px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-style: italic;
+    height: 40px;
+    border-radius: 10px ;
+    top: 550px;
+    /* left: 450px; */
+    /* display: flex; */
+    /* width: 60%; */
+    
+}
+span{
+    /* background: url('https://cdn2.iconfinder.com/data/icons/valentine-day-16/512/578_Heart_Love_Couple_Valentine_Greetings_valentine_valentines_day_love-128.png'); */
+    background: url('https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-128.png');
+width: 100px;
+pointer-events: none;
+height: 100px;
+position: absolute;
+background-size: cover;
+left:50%;
+top: 50%;
+transform: translate(-50%,-50%);
+animation: animate 6s linear;
+}
+@keyframes animate {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+   100%{
+        transform: translate(-50%,-5000%);
+        opacity: 0;
+        filter: hue-rotate(750deg);
+    }
+}
